@@ -81,6 +81,10 @@ body {
 
 body {
   /* color: rgb(var(--foreground-rgb)); */
+  max-width: 2360px;
+  margin: 0 auto !important;
+  float: none !important;
+  background-color: #00000010;
 }
 
 h2 {
@@ -126,12 +130,13 @@ a {
 }
 
 .menuLink {
+  text-decoration: none;
+  color: #363636;
   text-transform: uppercase;
   letter-spacing: .15em;
   font-size: 12px;
   font-weight: 600;
   line-height: 2.2em;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* .menuLink li {
@@ -154,6 +159,41 @@ a {
 .menuLinkAnimation:hover {
   transform: translateX(100%);
   background-color: black;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  color: white;
+}
+
+.mosaicMain {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.mosaic {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.imgOverlay {
+  transform: translateX(0);
+  transition: 1s;
+}
+
+.imgOverlay:hover {
+  transform: translateX(5px);
 }
 
 @media (prefers-color-scheme: dark) {}

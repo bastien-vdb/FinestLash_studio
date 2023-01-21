@@ -17,8 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <div className='bg-white px-12 max-w-[1500px] m-auto'>
         <Header />
         <Corpus/>
+        </div>
       </main>
     </>
   )

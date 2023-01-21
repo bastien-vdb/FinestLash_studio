@@ -4,13 +4,14 @@ import Button from './reusable/Button';
 import Prestations from './reusable/Prestations';
 import { listPresta } from '../staticsdata';
 import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from '../staticsdata';
+import { OverlayImageMobile, OverlayDesktop } from './OverlayIMG';
 
 function Corpus(props) {
 
     return <>
-
         <div>
-            <Image className='w-auto h-[80vh] object-cover' src='/images/manns/mann6.jpg' width={1558} height={1067} alt="mann1" />
+            <OverlayImageMobile />
+            <OverlayDesktop />
         </div>
 
         <div className='bloc1 p-6'>
@@ -90,24 +91,24 @@ function Corpus(props) {
                 </div>
             </div>
             <div className='footer m-4'>
-                    <Image className='w-full p-20' src='/images/logo.png' width={185} height={185} alt="finest logo" />
-                    <div className='flex-col justify-start'>
-                        <h2 className='text-2xl text-left'>BWK STUDIO</h2>
-                        <ul>
-                            <li>ACCUEIL</li>
-                            <li>A PROPOS</li>
-                            <li>BROWS</li>
-                        </ul>
-                    </div>
-                    <h2 className='text-2xl text-left'>VOUS & BWK</h2>
+                <Image className='w-full p-20' src='/images/logo.png' width={185} height={185} alt="finest logo" />
+                <div className='flex-col justify-start'>
+                    <h2 className='text-2xl text-left'>BWK STUDIO</h2>
                     <ul>
-                        <li>MENTIONS LÉGALES</li>
-                        <li>C.G.V.</li>
-                        <li>POLI. DE CONFIDENTIALITÉ</li>
+                        <li>ACCUEIL</li>
+                        <li>A PROPOS</li>
+                        <li>BROWS</li>
                     </ul>
-                    <div>
-                    </div>
                 </div>
+                <h2 className='text-2xl text-left'>VOUS & BWK</h2>
+                <ul>
+                    <li>MENTIONS LÉGALES</li>
+                    <li>C.G.V.</li>
+                    <li>POLI. DE CONFIDENTIALITÉ</li>
+                </ul>
+                <div>
+                </div>
+            </div>
             <div className='flex justify-center items-center h-10 bg-[#CCB3AE] text-white text-xs text-center'>@ 2023 Finest Lash Studio, Réalisation: @Bastien VDB</div>
         </div>
     </>
