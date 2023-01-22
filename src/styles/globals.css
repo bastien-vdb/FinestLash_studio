@@ -139,26 +139,25 @@ a {
   line-height: 2.2em;
 }
 
-/* .menuLink li {
-  transition: all 3s;
-  border-bottom: 1px solid transparent;
-}
-
-.menuLink li:hover {
-  color: #a76900;
-  border-bottom: 1px solid #a76900;
-} */
-
 .menuLinkAnimation {
-  background-color: #a76900;
-  height: 0.01em;
-  transform: translateX(0%);
-  transition: all 2s;
+  width: 0;
+  height: 2px;
+  background-color: #CCB3AE;
 }
 
-.menuLinkAnimation:hover {
-  transform: translateX(100%);
-  background-color: black;
+.menuLink:hover+.menuLinkAnimation {
+  animation: appear 0.5s ease-in-out forwards;
+  width: 100%;
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .image-overlay {

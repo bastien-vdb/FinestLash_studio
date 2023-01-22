@@ -3,7 +3,7 @@ import { Button as BTN } from 'semantic-ui-react';
 
 export const OverlayImageMobile = () => {
     return (
-        <div className='flex flex-col lg:hidden'>
+        <div className='flex flex-col md:hidden'>
             <div className='relative'>
                 <Image className='w-auto h-[80vh] object-cover' src='/images/manns/mann6.jpg' width={1558} height={1067} alt="mann1" />
                 <div className="image-overlay">
@@ -15,7 +15,7 @@ export const OverlayImageMobile = () => {
                 </div>
             </div>
 
-            <div className='relative my-2 hidden md:block lg:m-2'>
+            <div className='relative my-2 hidden'>
                 <div className='flex flex-col gap-2'>
                     <div className='flex w-full gap-2'>
                         <Image className='w-full' src='/images/manns/mann1.png' width={1558} height={1067} alt="mann1" />
@@ -41,7 +41,7 @@ export const OverlayImageMobile = () => {
 
 export const OverlayDesktop = () => {
     return (
-        <div className='mosaicMain flex h-full hidden lg:grid'>
+        <div className='mosaicMain flex h-full hidden md:grid'>
 
             <div className='imgOverlay relative'>
                 <Image className='w-full' src='/images/manns/mann1.png' width={1558} height={1067} alt="mann1" />
