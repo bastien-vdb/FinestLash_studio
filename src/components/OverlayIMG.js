@@ -5,7 +5,7 @@ export const OverlayImageMobile = () => {
     return (
         <div className='flex flex-col md:hidden'>
             <div className='relative'>
-                <Image className='w-auto h-[80vh] object-cover' src='/images/manns/mann6.jpg' width={1558} height={1067} alt="mann1" />
+                <Image className='w-auto h-screen sm:h-full object-cover' src='/images/manns/mannNew1.png' width={1538} height={2048} alt="mann1" />
                 <div className="image-overlay">
                     <div className="overlay-text flex flex-col items-center justify-center gap-6">
                         <h3 className='text-white'>FinestLash Studio</h3>
