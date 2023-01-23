@@ -44,7 +44,7 @@ export const OverlayDesktop = () => {
         <div className='mosaicMain flex h-full hidden md:grid'>
 
             <div className='imgOverlay relative'>
-                <Image className='w-full' src='/images/manns/mann1.png' width={1558} height={1067} alt="mann1" />
+                <Image className='w-full' src='/images/manns/mannNew1.png' width={1538} height={2048} alt="mann1" />
                 <div className="image-overlay">
                     <div className="overlay-text flex flex-col items-center justify-center gap-6">
                         <h3 className='text-white'>FinestLash Studio</h3>
@@ -56,7 +56,7 @@ export const OverlayDesktop = () => {
 
             <div className='mosaic grid'>
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/mann1.png' width={1558} height={1067} alt="mann1" />
+                    <Image className='w-full' src='/images/manns/mannNew4.jpg' width={536} height={819} alt="mann1" />
                     <div className="image-overlay">
                         <div className="overlay-text flex flex-col items-center justify-center gap-6">
                             <h2 className='text-white' >Lieu</h2>
@@ -65,7 +65,7 @@ export const OverlayDesktop = () => {
                 </div>
 
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/mann3.png' width={1558} height={1067} alt="mann1" />
+                    <Image className='w-full' src='/images/manns/tarasbody.jpeg' width={536} height={819} alt="mann1" />
                     <div className="image-overlay">
                         <div className="overlay-text flex flex-col items-center justify-center gap-6">
                             <h2 className='text-white' >Formations</h2>
@@ -74,7 +74,7 @@ export const OverlayDesktop = () => {
                 </div>
 
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/mann2.png' width={1558} height={1067} alt="mann1" />
+                    <Image className='w-full' src='/images/manns/formations1.jpg' width={536} height={819} alt="mann1" />
                     <div className="image-overlay">
                         <div className="overlay-text flex flex-col items-center justify-center gap-6">
                             <h2 className='text-white' >Prestations</h2>
@@ -83,7 +83,7 @@ export const OverlayDesktop = () => {
                 </div>
 
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/mann3.png' width={1558} height={1067} alt="mann1" />
+                    <Image className='w-full' src='/images/manns/mannequin1.jpeg' width={536} height={819} alt="mann1" />
                     <div className="image-overlay">
                         <div className="overlay-text flex flex-col items-center justify-center gap-6">
                             <h2 className='text-white' >Techniques</h2>

@@ -18,7 +18,7 @@ function Header(props) {
             <div className='relative'>
                 <div className='flex justify-center items-center h-8 bg-[#CCB3AE] text-white text-center'>FinestLash Studio, salon d'extension de cils</div>
                 <div className='flex justify-between items-center m-6 px-8'>
-                    <Image className='w-40' src='/images/bwkstudio.png' width={1112} height={351} alt="logo" />
+                    <Image className='w-20' src='/images/logo.svg' width={351} height={351} alt="logo" />
                     <ToggleMenu menu={menu} />
                     <DesktopMenu menu={menu}/>
                 </div>

@@ -1,30 +1,24 @@
 export const listPresta = [
     {
-        descr: 'BLUSH LIPS & DARK LIPS',
-        title: 'Lips Artist',
-        img: '/images/presta/presta1.png'
+        descr: 'L’extension de cils classique',
+        title: 'Classique',
+        img: '/images/vignettes/vignette1.jpeg'
     },
     {
-        descr: 'OMBRE POWDER',
-        title: 'Brows Artist',
-        img: '/images/presta/presta2.png'
+        descr: 'L’extension de cils « volume russe »',
+        title: 'Volume Russe',
+        img: '/images/vignettes/vignette5.jpg'
     },
     {
-        descr: 'TÂCHES DE ROUSSEURS',
-        title: 'Fake Freckles',
-        img: '/images/presta/presta3.png'
+        descr: 'La dépose des extensions de cils',
+        title: 'Dépose des extensions',
+        img: '/images/vignettes/vignette3.jpeg'
     },
     {
-        descr: 'DERMOPIGM. CAPILLAIRE',
-        title: 'Hair Technic',
-        img: '/images/presta/presta4.png'
+        descr: 'Pour sublimer votre regard',
+        title: 'Autres techniques',
+        img: '/images/vignettes/vignette4.jpg'
     },
-    {
-        descr: 'BEAUTÉ DES ONGLES',
-        title: 'Nails',
-        img: '/images/presta/presta5.png'
-    }
-
 ]
 
 export const heroIconMap = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
