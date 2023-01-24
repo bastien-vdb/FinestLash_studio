@@ -6,7 +6,9 @@ export default function Prestations({ img, descr, title }) {
     return (
         <>
             <div className='flex flex-col items-center justify-center gap-2 my-2'>
-                <Image className='px-10 rounded rounded-t-full' src={img} width={657} height={743} alt={descr} />
+                <div className="border border-[#CCB3AE] border-4 m-6 rounded-full">
+                <Image className='w-44 md:w-40 lg:w-60 rounded rounded-full' src={img} width={657} height={743} alt={descr} />
+                </div>
                 <h3 className=''>{descr}</h3>
                 <h2 className='text-2xl p-0 m-0'>{title}</h2>
                 <Button text={`+ d'infos`} />
