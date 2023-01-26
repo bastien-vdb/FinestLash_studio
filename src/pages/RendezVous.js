@@ -2,26 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 function RendezVous(props) {
 
-    // const [iframeContent, setIframeContent] = useState('');
-
-    // useEffect(() => {
-    //     // Fetch the desired content from the page
-    //     fetch('https://finestlashstudio.fr/rendez-vous/')
-    //         .then((response) => response.text())
-    //         .then((html) => {
-    //             // Extract the desired content using the DOM API
-    //             const parser = new DOMParser();
-    //             const doc = parser.parseFromString(html, "text/html");
-    //             const desiredContent = doc.querySelector('.elementor-widget-container');
-
-    //             // Update the iframe content
-    //             setIframeContent(desiredContent.outerHTML);
-    //         });
-    // }, []);
+    const [loading, setLoading] = useState(true);
 
 
     return (
         <div>
+            {loading && <div className='flex text-4xl justify-center items-center h-screen'>Veuillez patienter quelques secondes...</div>}
             <iframe id="inlineFrameExample"
                 title="Inline Frame Example"
                 width="100%"
@@ -29,6 +15,7 @@ function RendezVous(props) {
                 className='h-screen'
                 src="https://finestlashstudio.fr/reservations/"
                 frameborder="0"
+                onLoad={() => setLoading(false)}
             >
             </iframe>
         </div>
