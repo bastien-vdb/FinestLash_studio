@@ -6,10 +6,10 @@ import DesktopMenu from './reusable/DesktopMenu';
 function Header(props) {
 
     const menu = [
-        { title: "Accueil", link: "" },
+        { title: "Accueil", link: "/" },
         { title: "Prestations", link: "" },
         { title: "Formations", link: "" },
-        { title: "Rendez-vous", link: "" },
+        { title: "Rendez-vous", link: "/RendezVous" },
         { title: "Contact", link: "" },
       ]
 
