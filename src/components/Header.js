@@ -7,11 +7,11 @@ function Header(props) {
 
     const menu = [
         { title: "Accueil", link: "/" },
-        { title: "Prestations", link: "" },
-        { title: "Formations", link: "" },
+        { title: "Prestations", link: "/PrestationsPage" },
+        { title: "Formations", link: "/Formations" },
         { title: "Rendez-vous", link: "/RendezVous" },
-        { title: "Contact", link: "" },
-      ]
+        { title: "Contact", link: "/Contact" },
+    ]
 
     return (
         <>
@@ -20,7 +20,7 @@ function Header(props) {
                 <div className='flex justify-between items-center m-6 px-8'>
                     <Image className='w-20' src='/images/logo.svg' width={351} height={351} alt="logo" />
                     <ToggleMenu menu={menu} />
-                    <DesktopMenu menu={menu}/>
+                    <DesktopMenu menu={menu} />
                 </div>
             </div>
         </>

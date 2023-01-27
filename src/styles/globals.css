@@ -195,4 +195,9 @@ a {
     transform: translateX(5px);
   }
 
+  .formations {
+    background-image: url('/images/Formations/formations.jpg');
+    background-attachment: fixed;
+  }
+
 @media (prefers-color-scheme: dark) {}
