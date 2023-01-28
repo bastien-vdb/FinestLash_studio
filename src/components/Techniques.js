@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import ImagePresentation from './ImagePresentation';
+import ImagePresentation from './reusable/ImagePresentation';
 
 function Techniques({ title, descr, img }) {
     console.log(title, descr, img);

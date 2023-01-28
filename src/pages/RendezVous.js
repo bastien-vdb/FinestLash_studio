@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function RendezVous(props) {
 
@@ -8,6 +8,7 @@ function RendezVous(props) {
         <div>
             {loading && <div className='flex text-4xl text-[#CCB3AE] justify-center items-center h-screen'>Veuillez patienter quelques secondes...</div>}
             <iframe id="Reservations"
+                preload
                 title="Réservations Rendez-vous"
                 width="100%"
                 height="100%"

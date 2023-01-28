@@ -2,8 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import ToggleMenu from './reusable/ToggleMenu';
 import DesktopMenu from './reusable/DesktopMenu';
+import { useState } from 'react';
 
-function Header(props) {
+function Header({ setPayClicked }) {
 
     const menu = [
         { title: "Accueil", link: "/" },
@@ -20,7 +21,7 @@ function Header(props) {
                 <div className='flex justify-between items-center m-6 px-8'>
                     <Image className='w-20' src='/images/logo.svg' width={351} height={351} alt="logo" />
                     <ToggleMenu menu={menu} />
-                    <DesktopMenu menu={menu} />
+                    <DesktopMenu menu={menu} setPayClicked={setPayClicked} />
                 </div>
             </div>
         </>

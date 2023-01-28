@@ -3,7 +3,7 @@ import React from 'react';
 function ImagePresentation({ img, title, descr }) {
     return (
         <div
-            className="w-full cursor-pointer rounded-xl relative group shadow-xl"
+            className="w-[300px] h-[700px] m-10 aspect-video cursor-pointer rounded-xl relative group shadow-xl"
         >
             <div
                 className="z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
