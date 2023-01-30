@@ -2,8 +2,8 @@ import Image from 'next/image';
 import ButtonBlack from './reusable/ButtonBlack';
 import Button from './reusable/Button';
 import Prestations from './reusable/Prestations';
-import { listPresta } from '../staticsdata';
-import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from '../staticsdata';
+import { listPresta } from './utils/staticsdata';
+import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from './utils/staticsdata';
 import { OverlayImageMobile, OverlayDesktop } from './OverlayIMG';
 
 function Corpus(props) {
@@ -40,7 +40,7 @@ function Corpus(props) {
             <div className='flex flex-col items-center justify-center md:flex-row'>
                 {listPresta &&
                     listPresta.map((e, key) => (
-                        <Prestations img={e.img} descr={e.descr} title={e.title} />
+                        <Prestations key={key} img={e.img} descr={e.descr} title={e.title} />
                     ))
                 }
             </div>

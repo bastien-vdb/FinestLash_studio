@@ -7,7 +7,7 @@ function DesktopMenu({ menu, setPayClicked }) {
             {menu.map((e, key) => {
                 if (e.title === 'Rendez-vous') {
                     return (
-                        <div className='linkAnimation'>
+                        <div key={key} className='linkAnimation'>
                             <button className='menuLink' onClick={() => setPayClicked(true)}>
                                 {e.title}
                             </button>
@@ -17,7 +17,7 @@ function DesktopMenu({ menu, setPayClicked }) {
                 }
                 else {
                     return (
-                        <div className='linkAnimation'>
+                        <div key={key} className='linkAnimation'>
                             <Link onClick={() => setPayClicked(false)} className='menuLink' href={e.link}>
                                 {e.title}
                             </Link>
