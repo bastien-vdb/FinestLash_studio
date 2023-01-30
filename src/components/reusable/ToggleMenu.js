@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-function ToggleMenu({ menu }) {
+function ToggleMenu({ menu, setPayClicked }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -13,17 +13,32 @@ function ToggleMenu({ menu }) {
         </div>
       </button>
 
-      <div className='absolute top-32 left-0 bg-white shadow-sm shadow-black w-full translate-x-[-100%]' style={{ transition: 'all 0.3s ease-in-out', transform: isOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
+      <div className='absolute top-28 left-0 bg-white shadow-sm shadow-black w-full translate-x-[-100%]' style={{ transition: 'all 0.3s ease-in-out', transform: isOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
         <ul className='menuLink flex flex-col gap-4 w-fit ml-6 my-4'>
 
-          {menu.map((e, key) => (
-            <li className='linkAnimation'>
-              <Link className='menuLink text-gray-600' href={e.link}>{e.title}</Link>
-              <div className='menuLinkAnimation'></div>
-            </li>
-          ))
-
+          {menu.map((e, key) => {
+            if (e.title === 'Rendez-vous') {
+              return (
+                <div className='linkAnimation'>
+                  <button className='menuLink' onClick={() => { setPayClicked(true); setIsOpen(false) }}>
+                    {e.title}
+                  </button>
+                  <div className='menuLinkAnimation'></div>
+                </div>
+              )
+            }
+            else {
+              return (
+                <div className='linkAnimation'>
+                  <Link onClick={() => { setPayClicked(false); setIsOpen(false) }} className='menuLink' href={e.link}>
+                    {e.title}
+                  </Link>
+                  <div className='menuLinkAnimation'></div>
+                </div>
+              )
+            }
           }
+          )}
         </ul>
       </div>
 

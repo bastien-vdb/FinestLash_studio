@@ -5,8 +5,8 @@ function Formations(props) {
     return (
         <>
             <div className='formations w-full h-screen shadow-2xl'></div>
-            <div className='flex shadow-2xl p-2'>
-                <div className='m-6'>
+            <div className='flex flex-wrap shadow-2xl p-2'>
+                <div className='m-6 w-[300px]'>
                     <h1>LA FINEST LASH ACADEMY</h1>
                     <h2>Formation Cil à cil + Volume
                         (méthodes russe et américaine)

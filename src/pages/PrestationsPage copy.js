@@ -28,7 +28,9 @@ function PrestationsPage(props) {
             <div className='from-white via-[#CCB3AE] to-white bg-gradient-to-b'>
                 <div className='introTechnique flex flex-col justify-center items-center gap-4 mx-20 bg-white p-6 rounded-2xl py-10 shadow-lg'>
                     <h2 className='text-6xl'>Prestations</h2>
-                    <p className='px-40 text-justify'>Le Finest Beauty Studio propose 3 types de prestation : la pose cil à cil, la pose mixte et la pose volume. Il y en a sûrement qui se sentent un peu perdues entre ces différents types de pose et qui sont hésitantes quant au choix à faire, mais on a pensé à vous ! Toutes les explications dont vous avez besoin sont ci-dessous.</p>
+                    <p className='px-40 text-justify'>
+                        Le Finest Beauty Studio propose 3 types de prestation : la pose cil à cil, la pose mixte et la pose volume. Il y en a sûrement qui se sentent un peu perdues entre ces différents types de pose et qui sont hésitantes quant au choix à faire, mais on a pensé à vous ! Toutes les explications dont vous avez besoin sont ci-dessous.
+                    </p>
 
                     <div className='flex justify-between flex-wrap'>
                         {techniques.map((e, key) => (

@@ -1,23 +1,30 @@
 import React from 'react';
 import Techniques from '../components/Techniques';
 import Image from 'next/image';
-import ButtonBlack from '@/components/reusable/ButtonBlack';
 
 const techniques = [
     {
         title: 'POSE CIL À CIL',
-        descr: 'La pose cil à cil est une technique consistant à coller une extension unique sur un cil naturel. Ce type de pose est celui ayant l’effet le plus naturel. Le studio utilise différentes épaisseurs et choisira celle la plus adaptée à vos cils naturels ainsi qu’au rendu souhaité. La pose cil à cil est à 70€.',
-        img: '/images/vignettes/vignette1.jpeg'
+        descr: 'La pose cil à cil est une technique consistant à coller une extension unique sur un cil naturel. Ce type de pose est celui ayant l’effet le plus naturel. Le studio utilise différentes épaisseurs et choisira celle la plus adaptée à vos cils naturels ainsi qu’au rendu souhaité.',
+        img: '/images/vignettes/vignette1.jpeg',
+        price: 70,
     },
     {
         title: 'POSE MIXTE',
-        descr: 'La pose mixte est une technique qui consiste à coller une extension unique sur un cil naturel et à coller une extension en groupe de 2 à 5 cils sur un cil naturel. Cette technique est idéale pour les personnes qui ont des cils naturels fins et qui souhaitent un rendu plus dense. La pose mixte est à 80€.',
-        img: '/images/vignettes/vignette3.jpeg'
+        descr: 'La pose mixte est un mélange entre la pose cil à cil et la pose volume russe. Il y aura donc des extensions uniques, combinées avec des bouquets de plusieurs cils, pour celles qui veulent un résultat un peu plus fourni. ',
+        img: '/images/vignettes/vignette3.jpeg',
+        price: 80,
     },
     {
         title: 'POSE VOLUME',
-        descr: 'La pose volume est une technique qui consiste à coller une extension en groupe de 2 à 5 cils sur un cil naturel. Cette technique est idéale pour les personnes qui ont des cils naturels fins et qui souhaitent un rendu plus dense. La pose volume est à 90€.',
-        img: '/images/manns/mannNew4.jpg'
+        descr: 'Le volume est une technique consistant à poser un bouquet de cils sur un cil naturel. Bien entendu, l’épaisseur des cils utilisés en volume sont bien plus fins et légers afin que le poids bouquet n’endommage pas le cil naturel. Le bouquet peut contenir  2 extensions comme il peut en contenir 4 et au delà. Plus le bouquet est chargé, plus le volume est intense.',
+        img: '/images/vignettes/vignette2.jpeg',
+        price: 90,
+        complements: {
+            title1: 'la pose volume est à 90€',
+            title2: 'Le volume intense à 100€',
+            title3: 'Le volume effet fox eyes à 100€.'
+        }
     }
 ]
 
@@ -25,17 +32,20 @@ function PrestationsPage(props) {
 
     return (
         <>
-            <div className='from-white via-[#CCB3AE] to-white bg-gradient-to-b'>
-                <div className='flex flex-col justify-center items-center bg-white rounded-2xl shadow-lg'>
-                    <h2 className='text-6xl'>Prestations</h2>
-                    <p className='text-justify'>Le Finest Beauty Studio propose 3 types de prestation : la pose cil à cil, la pose mixte et la pose volume. Il y en a sûrement qui se sentent un peu perdues entre ces différents types de pose et qui sont hésitantes quant au choix à faire, mais on a pensé à vous ! Toutes les explications dont vous avez besoin sont ci-dessous.</p>
+            <div className="cursor-pointer rounded-xl relative group shadow-xl">
+                <div className="bannierePrestation w-full pt-16 pb-24 text-center">
+                    <h4 className="text-4xl font-bold text-gray-800">PRESTATIONS</h4>
+                    <p className="text-sm md:text-base text-gray-800 mt-6 text-justify lg:text-center mx-6 sm:mx-12 md:mx-40 lg:mx-96  ">
+                        Le Finest Beauty Studio propose 3 types de prestation : la pose cil à cil, la pose mixte et la pose volume.
+                        Il y en a sûrement qui se sentent un peu perdues entre ces différents types de pose et qui sont hésitantes quant au choix à faire, mais on a pensé à vous !
+                        Toutes les explications dont vous avez besoin sont ci-dessous.
+                    </p>
+                </div >
 
-                    <div className='flex justify-between flex-wrap gap-10'>
-                        {techniques.map((e, key) => (
-                            <Techniques title={e.title} descr={e.descr} img={e.img} />
-                        ))}
+                <div className="w-full 2xl:w-3/4 flex items-center justify-center px-8 md:px-32 lg:px-16 2xl:px-0 mx-auto -mt-8">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        {techniques.map((e, key) => { return <Techniques {...e} key={key} /> })}
                     </div>
-                    <ButtonBlack text='Prendre rendez-vous' link='/RendezVous' />
                 </div>
             </div>
         </>

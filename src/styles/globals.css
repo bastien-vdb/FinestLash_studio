@@ -160,44 +160,57 @@ a {
   }
 }
 
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(30, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .overlay-text {
-    color: white;
-  }
+.overlay-text {
+  color: white;
+}
 
-  .mosaicMain {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
+.mosaicMain {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
 
-  .mosaic {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
+.mosaic {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
 
-  .imgOverlay {
-    transform: translateX(0);
-    transition: 1s;
-  }
+.imgOverlay {
+  transform: translateX(0);
+  transition: 1s;
+}
 
-  .imgOverlay:hover {
-    transform: translateX(5px);
-  }
+.imgOverlay:hover {
+  transform: translateX(5px);
+}
 
-  .formations {
-    background-image: url('/images/Formations/formations.jpg');
-    background-attachment: fixed;
-  }
+.formations {
+  background-image: url('/images/Formations/formations.jpg');
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bannierePrestation {
+  background-image: url('/images/blueeyes.png');
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* added */
+  margin: auto;
+}
 
 @media (prefers-color-scheme: dark) {}
