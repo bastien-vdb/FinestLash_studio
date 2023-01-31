@@ -4,10 +4,15 @@ import Image from 'next/image';
 function Formations(props) {
     return (
         <>
-            <div className='formations w-full h-screen shadow-2xl'></div>
-            <div className='flex flex-wrap shadow-2xl p-2'>
-                <div className='m-6 w-[300px]'>
-                    <h1>LA FINEST LASH ACADEMY</h1>
+            <div className='formations mobileBaniere w-full h-screen shadow-2xl md:hidden'></div>
+            <div className='desktopBaniere rounded grid grid-rows-3 grid-flow-col shadow-lg'>
+                <Image className="h-full row-span-3 shadow-lg border-2" src='/images/vignettes/vignette1.jpeg' width={1366} height={1366} alt="Formation finest Studio" />
+                <Image className="col-span-2 shadow-lg border-2" src='/images/vignettes/vignette2.jpg' width={1366} height={1366} alt="Formation finest Studio" />
+                <Image className="row-span-2 shadow-lg border-2" src='/images/vignettes/vignette4.jpg' width={1366} height={1366} alt="Formation finest Studio" />
+            </div>
+            <div className='flex flex-col lg:flex-row shadow-2xl p-2'>
+                <div className='m-6'>
+                    <h3>LA FINEST LASH ACADEMY</h3>
                     <h2>Formation Cil à cil + Volume
                         (méthodes russe et américaine)
                         1600€
@@ -22,7 +27,7 @@ function Formations(props) {
                         </p>
                     </div>
                 </div>
-                <Image className="w-[700px] shadow-xl" src='/images/finest-salon.png' width={3874} height={2758} alt="Salon finest Studio" />
+                <Image className="shadow-xl m-auto" src='/images/vignettes/vignette4.jpg' width={1366} height={1366} alt="Formation finest Studio" />
             </div>
         </>
     );

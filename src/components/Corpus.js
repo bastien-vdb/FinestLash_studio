@@ -97,7 +97,7 @@ function Corpus(props) {
                         <h3>FINEST LASH STUDIO - DEVENIR UN/UNE VERITABLE professionnel</h3>
                         <h2>La formation</h2>
                         <p className='text-center lg:w-72'>
-                        La formation Cil à cil, sur 2 jours, est faite pour les lash students débutantes sans expérience, souhaitant démarrer une activité en qualité de technicienne en extension de cils. Le programme de formation, traite...
+                            La formation Cil à cil, sur 2 jours, est faite pour les lash students débutantes sans expérience, souhaitant démarrer une activité en qualité de technicienne en extension de cils. Le programme de formation, traite...
                         </p>
                         <ButtonBlack text='Voir notre programme' />
                         <Button text='pré-inscription' />

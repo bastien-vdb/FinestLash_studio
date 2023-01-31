@@ -9,14 +9,15 @@ function ToggleMenu({ menu, setPayClicked }) {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuOpened.current && !menuOpened.current.contains(e.target)) {
-        setIsOpen(false);
-        console.log('clicked outside');
+      if (e.target.id === 'openOrClose') {
+        setIsOpen(() => false);
       }
-      // else if (e.target.id === 'openOrClose') {
-      //   setIsOpen(() => false);
-      //   console.log('clicked on button');
-      // }
+      else if (menuOpened.current && !menuOpened.current.contains(e.target)
+      ) {
+        console.log(!menuOpened.current.contains(e.target))
+        setIsOpen(false);
+      }
+
     };
 
     document.addEventListener('mousedown', handleClickOutside);
@@ -26,24 +27,14 @@ function ToggleMenu({ menu, setPayClicked }) {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(isOpen);
-  }, []);
-
   return (
     <div className='z-40 lg:hidden'>
-      {!isOpen ? (
-        <button id='openOrClose' onClick={() => setIsOpen(!isOpen)}>
-          {toggleClosed}
-        </button>)
-        :
-        (<button>
-          {toggleOpened}
-        </button>)
-      }
+      {!isOpen &&
+        <button id='openOrClose' onClick={() => setIsOpen(true)}>{toggleClosed}</button>}
 
 
-      <div ref={menuOpened} className='absolute top-28 left-0 bg-white shadow-sm shadow-black w-full translate-x-[-100%]' style={{ transition: 'all 0.3s ease-in-out', transform: isOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
+      < div ref={menuOpened} className='absolute top-28 left-0 bg-white shadow-sm shadow-black w-full translate-x-[-100%]' style={{ transition: 'all 0.3s ease-in-out', transform: isOpen ? 'translateX(0%)' : 'translateX(-100%)' }}>
+        <button className='absolute right-4 top-2' onClick={() => setIsOpen(false)}>{toggleOpened}</button>
         <ul className='menuLink flex flex-col gap-4 w-fit ml-6 my-4'>
 
           {menu.map((e, key) => {
@@ -72,7 +63,7 @@ function ToggleMenu({ menu, setPayClicked }) {
         </ul>
       </div>
 
-    </div>
+    </div >
   );
 }
 

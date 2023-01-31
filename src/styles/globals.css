@@ -196,9 +196,9 @@ a {
 }
 
 .formations {
-  background-image: url('/images/Formations/formations.jpg');
+  background-image: url('/images/Formations/formations2.jpg');
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
