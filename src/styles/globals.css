@@ -213,4 +213,24 @@ a {
   margin: auto;
 }
 
+.programDescription {
+  margin: 2px;
+  margin-top: 10px;
+}
+
+.programDescription h3 {
+  margin-top: 10px;
+  margin: 4px;
+  font-size:large;
+}
+
+
+.programDescription h4 {
+  margin-top: 10px;
+  margin: 4px;
+  font-size:large;
+  font-weight: bold;
+}
+
+
 @media (prefers-color-scheme: dark) {}

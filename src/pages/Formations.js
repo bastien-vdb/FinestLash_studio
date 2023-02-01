@@ -1,34 +1,27 @@
 import React from 'react';
 import Image from 'next/image';
+import { Programs1, Programs2 } from '../components/Programs';
 
 function Formations(props) {
     return (
         <>
-            <div className='formations mobileBaniere w-full h-screen shadow-2xl md:hidden'></div>
-            <div className='desktopBaniere rounded grid grid-rows-3 grid-flow-col shadow-lg'>
-                <Image className="h-full row-span-3 shadow-lg border-2" src='/images/vignettes/vignette1.jpeg' width={1366} height={1366} alt="Formation finest Studio" />
-                <Image className="col-span-2 shadow-lg border-2" src='/images/vignettes/vignette2.jpg' width={1366} height={1366} alt="Formation finest Studio" />
-                <Image className="row-span-2 shadow-lg border-2" src='/images/vignettes/vignette4.jpg' width={1366} height={1366} alt="Formation finest Studio" />
-            </div>
-            <div className='flex flex-col lg:flex-row shadow-2xl p-2'>
-                <div className='m-6'>
-                    <h3>LA FINEST LASH ACADEMY</h3>
-                    <h2>Formation Cil à cil + Volume
-                        (méthodes russe et américaine)
-                        1600€
-                    </h2>
-
-                    <div className='text-justify'>
-                        <p className='mt-10'>
-                            La formation Cil à cil + Volume, sur 3 jours, est faite pour les lash students débutantes sans expérience, souhaitant démarrer une activité en qualité de technicienne en extension de cils. Le programme de formation est en partie identique à la formation Cil à cil présentée précédemment. La différence : un jour de formation supplémentaire : une introduction aux méthodes russe et américaine sera faite. Ce troisième jour de formation consacré au Volume sera alors purement basé sur la technique.
-                        </p>
-                        <p>
-                            Les nouvelles lash artists seront donc non seulement aptes à créer différents types de pose et proposer un service de qualité, mais seront également aptes à gérer leur business comme de réelles Boss Ladies, tout en confiance.
-                        </p>
+            <div className='bg-red-50 pb-10'>
+                <div className='formations mobileBaniere w-full h-screen shadow-2xl md:hidden'></div>
+                <div className='container relative grid grid-cols-2 lg:w-[1000px] m-auto rounded shadow-lg'>
+                    <Image className="opacity-90 sm:h-[300px] shadow-sm object-cover border-2" src='/images/vignettes/vignette1.jpeg' width={1366} height={1366} alt="Formation finest Studio" />
+                    <Image className="opacity-90 sm:h-[300px] shadow-sm object-cover border-2" src='/images/vignettes/vignette2.jpg' width={1366} height={1366} alt="Formation finest Studio" />
+                    <Image className="opacity-90 sm:h-[400px] shadow-lg object-cover border-2 col-span-2" src='/images/vignettes/vignette4.jpg' width={1366} height={1366} alt="Formation finest Studio" />
+                    <div className="image-overlay">
+                        <div className="overlay-text flex flex-col items-center justify-center gap-6">
+                            <h3 className='text-lg text-white'>Formations FinestLash Studio</h3>
+                            <span className='mx-6 text-3xl text-center text-white md:mx-12 lg:mx-40 lg:text-5xl'>Une formation professionalisante</span>
+                        </div>
                     </div>
                 </div>
-                <Image className="shadow-xl m-auto" src='/images/vignettes/vignette4.jpg' width={1366} height={1366} alt="Formation finest Studio" />
             </div>
+            <Programs1 />
+            <Programs2 />
+
         </>
     );
 }
