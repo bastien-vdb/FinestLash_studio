@@ -18,8 +18,8 @@ function Footer(props) {
                     <h2 className='text-2xl text-left'>VOUS & FINEST LASH STUDIO</h2>
                     <ul>
                         <li><Link href='/'>ACCUEIL</Link></li>
-                        <li>MENTIONS LÉGALES</li>
-                        <li>C.G.V.</li>
+                        <li><Link href="/Legal">MENTIONS LÉGALES</Link></li>
+                        <li><Link href="/CGV">C.G.V</Link></li>
                         <li><Link href="/Confidencial">POLI. DE CONFIDENTIALITÉ</Link></li>
                     </ul>
                 </div>

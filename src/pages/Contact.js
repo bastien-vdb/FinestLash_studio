@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from '../components/utils/staticsdata';
 import ContactForm from '@/components/ContactForm';
+import ContactForm2 from '@/components/ContactForm';
 
 function Contact(props) {
     return (
@@ -24,7 +25,7 @@ function Contact(props) {
                 </div>
                 <Image className='md:w-[600px]' src='/images/contactFLS.jpg' width={1152} height={1707} alt="finest-salon" />
             </div>
-            <ContactForm />
+            <ContactForm2 />
         </>
     );
 }
