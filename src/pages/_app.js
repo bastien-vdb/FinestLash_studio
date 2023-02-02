@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
           <RendezVous />
         </div>
         <div style={{ display: payClicked ? 'none' : 'block' }}>
-          <Component {...pageProps} />
+          <Component setPayClicked={setPayClicked}  {...pageProps} />
         </div>
         <Footer />
       </div>

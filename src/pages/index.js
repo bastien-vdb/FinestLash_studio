@@ -6,7 +6,7 @@ import Corpus from '@/components/Corpus';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ setPayClicked }) {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='sm:px-2 md:px-10 lg:px-16'>
-        <Corpus />
+        <Corpus setPayClicked={setPayClicked}  />
       </main>
     </>
   )

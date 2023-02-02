@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Button as BTN } from 'semantic-ui-react';
+import Link from 'next/link';
 
-export const OverlayImageMobile = () => {
+export const OverlayImageMobile = ({ setPayClicked }) => {
     return (
         <div className='flex flex-col md:hidden'>
             <div className='relative'>
@@ -10,7 +11,7 @@ export const OverlayImageMobile = () => {
                     <div className="overlay-text flex flex-col items-center justify-center gap-6">
                         <h3 className='text-white'>FinestLash Studio</h3>
                         <span className='text-3xl text-center text-white'>La précision avant tout</span>
-                        <BTN primary className='border border-white p-2 px-10'>A propos</BTN>
+                        <Link href="/RendezVous"><BTN primary className='border border-white p-2 px-10'>GO</BTN></Link>
                     </div>
                 </div>
             </div>
@@ -30,7 +31,7 @@ export const OverlayImageMobile = () => {
                     <div className="overlay-text flex flex-col items-center justify-center gap-6">
                         <h3 className='text-white'>FinestLash Studio</h3>
                         <span className='text-3xl text-center text-white'>La précision avant tout</span>
-                        <BTN primary className='border border-white p-2 px-10'>A propos</BTN>
+                        <Link href="/RendezVous"><BTN primary className='border border-white p-2 px-10'>GO</BTN></Link>
                     </div>
                 </div>
             </div>
@@ -39,7 +40,7 @@ export const OverlayImageMobile = () => {
     );
 };
 
-export const OverlayDesktop = () => {
+export const OverlayDesktop = ({ setPayClicked }) => {
     return (
         <div className='mosaicMain flex h-full hidden md:grid'>
 
@@ -49,46 +50,55 @@ export const OverlayDesktop = () => {
                     <div className="overlay-text flex flex-col items-center justify-center gap-6">
                         <h3 className='text-white'>FinestLash Studio</h3>
                         <span className='text-3xl text-center text-white'>La précision avant tout</span>
-                        <BTN primary className='border border-white p-2 px-10'>A propos</BTN>
+                        <Link href="/RendezVous"><BTN onClick={() => setPayClicked(true)} primary className='border border-white p-2 px-10'>GO</BTN></Link>
                     </div>
                 </div>
             </div>
 
             <div className='mosaic grid'>
+
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/mannNew4.jpg' width={536} height={819} alt="mann1" />
-                    <div className="image-overlay">
-                        <div className="overlay-text flex flex-col items-center justify-center gap-6">
-                            <h2 className='text-white' >Lieu</h2>
+                    <Link href="/Contact">
+                        <Image className='w-full' src='/images/manns/mannNew4.jpg' width={536} height={819} alt="mann1" />
+                        <div className="image-overlay">
+                            <div className="overlay-text flex flex-col items-center justify-center gap-6">
+                                <h2 className='text-white' >Lieu</h2>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
+                </div>
+
+                <div className='imgOverlay relative cursor-pointer'>
+                    <Link href="/Formations">
+                        <Image className='w-full' src='/images/manns/tarasbody.jpeg' width={536} height={819} alt="mann1" />
+                        <div className="image-overlay">
+                            <div className="overlay-text flex flex-col items-center justify-center gap-6">
+                                <h2 className='text-white' >Formations</h2>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/tarasbody.jpeg' width={536} height={819} alt="mann1" />
-                    <div className="image-overlay">
-                        <div className="overlay-text flex flex-col items-center justify-center gap-6">
-                            <h2 className='text-white' >Formations</h2>
+                    <Link href="/PrestationsPage">
+                        <Image className='w-full' src='/images/manns/formations1.jpg' width={536} height={819} alt="mann1" />
+                        <div className="image-overlay">
+                            <div className="overlay-text flex flex-col items-center justify-center gap-6">
+                                <h2 className='text-white' >Prestations</h2>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/formations1.jpg' width={536} height={819} alt="mann1" />
-                    <div className="image-overlay">
-                        <div className="overlay-text flex flex-col items-center justify-center gap-6">
-                            <h2 className='text-white' >Prestations</h2>
+                    <Link href="/PrestationsPage">
+                        <Image className='w-full' src='/images/manns/mannequin1.jpeg' width={536} height={819} alt="mann1" />
+                        <div className="image-overlay">
+                            <div className="overlay-text flex flex-col items-center justify-center gap-6">
+                                <h2 className='text-white' >Techniques</h2>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className='imgOverlay relative'>
-                    <Image className='w-full' src='/images/manns/mannequin1.jpeg' width={536} height={819} alt="mann1" />
-                    <div className="image-overlay">
-                        <div className="overlay-text flex flex-col items-center justify-center gap-6">
-                            <h2 className='text-white' >Techniques</h2>
-                        </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

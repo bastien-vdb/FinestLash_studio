@@ -6,12 +6,12 @@ import { listPresta } from './utils/staticsdata';
 import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from './utils/staticsdata';
 import { OverlayImageMobile, OverlayDesktop } from './OverlayIMG';
 
-function Corpus(props) {
+function Corpus({ setPayClicked }) {
 
     return <>
         <div>
-            <OverlayImageMobile />
-            <OverlayDesktop />
+            <OverlayImageMobile setPayClicked={setPayClicked} />
+            <OverlayDesktop setPayClicked={setPayClicked} />
         </div>
 
         <div className='bloc1 p-6'>
@@ -28,7 +28,7 @@ function Corpus(props) {
                             Proposant une variété de longueurs, courbures et épaisseurs pour que chacune y trouve son bonheur, le Finest Lash Studio s’adapte à chaque profil, et procède en fonction de la nature des cils de chaque cliente afin de sublimer leur regard sans endommager leurs cils naturels.
                         </p>
                     </div>
-                    <Button text='Prendre rendez-vous' />
+                    <Button setPayClicked={setPayClicked} text='Prendre rendez-vous' />
                 </div>
                 <Image className='m-auto md:max-w-[600px]' src='/images/blueeyes2.png' width={1024} height={1024} alt="palette" />
             </div>
@@ -40,7 +40,7 @@ function Corpus(props) {
             <div className='flex flex-col items-center justify-center md:flex-row'>
                 {listPresta &&
                     listPresta.map((e, key) => (
-                        <Prestations key={key} img={e.img} descr={e.descr} title={e.title} />
+                        <Prestations key={key} {...e} />
                     ))
                 }
             </div>
@@ -99,8 +99,8 @@ function Corpus(props) {
                         <p className='text-center lg:w-72'>
                             La formation Cil à cil, sur 2 jours, est faite pour les lash students débutantes sans expérience, souhaitant démarrer une activité en qualité de technicienne en extension de cils. Le programme de formation, traite...
                         </p>
-                        <ButtonBlack text='Voir notre programme' />
-                        <Button text='pré-inscription' />
+                        <ButtonBlack text='Voir notre programme' link='/Formations' />
+                        <Button text='pré-inscription' link='/Formations' />
                     </div>
                 </div>
             </div>

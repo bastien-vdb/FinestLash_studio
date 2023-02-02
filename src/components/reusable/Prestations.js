@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 
-export default function Prestations({ img, descr, title }) {
+export default function Prestations({ img, descr, title, link }) {
 
     return (
         <>
@@ -11,7 +11,7 @@ export default function Prestations({ img, descr, title }) {
                 </div>
                 <h3>{descr}</h3>
                 <h2 className='text-2xl p-0 m-0'>{title}</h2>
-                <Button text={`+ d'infos`} />
+                <Button text={`+ d'infos`} link={link} />
             </div>
 
         </>
