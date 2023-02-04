@@ -6,7 +6,7 @@ function RendezVous(props) {
 
     return (
         <div>
-            {loading && <div className='flex text-4xl text-[#CCB3AE] text-center justify-center items-center h-screen'>Veuillez patienter quelques secondes...</div>}
+            {loading && <div className='loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center h-screen'>Veuillez patienter quelques secondes...</div>}
             <iframe id="Reservations"
                 preload="true"
                 title="Réservations Rendez-vous"
