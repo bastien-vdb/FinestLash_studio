@@ -29,7 +29,7 @@ function RendezVous(props) {
                 width="100%"
                 height="100%"
                 className='h-screen'
-                src="https://dzt.pgb.mybluehost.me"
+                src="https://dzt.pgb.mybluehost.me/"
                 frameBorder="0"
                 onLoad={() => setLoading(false)}
                 style={{ display: loading ? 'none' : 'block' }}
