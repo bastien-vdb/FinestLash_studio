@@ -5,8 +5,17 @@ import Prestations from './reusable/Prestations';
 import { listPresta } from './utils/staticsdata';
 import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from './utils/staticsdata';
 import { OverlayImageMobile, OverlayDesktop } from './OverlayIMG';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import { aosAnimationConfig } from './utils/AosAnimationConfig';
 
 function Corpus({ setPayClicked }) {
+
+    useEffect(() => {
+        AOS.init(aosAnimationConfig);
+    }, []);
+
 
     return <>
         <div>
@@ -14,7 +23,7 @@ function Corpus({ setPayClicked }) {
             <OverlayDesktop setPayClicked={setPayClicked} />
         </div>
 
-        <div className='bloc1 p-6'>
+        <div data-aos="zoom-in" className='bloc1 p-6'>
             <div className='bg-gray-50 p-6 gap-4 flex flex-col lg:flex-row'>
                 <div className='flex flex-col items-center justify-center gap-4'>
                     <h3>Finest Lash Studio - LASH EXPERT</h3>
@@ -34,7 +43,7 @@ function Corpus({ setPayClicked }) {
             </div>
         </div>
 
-        <div className='bloc2'>
+        <div data-aos="zoom-in" className='bloc2'>
             <h3>FINEST LASH STUDIO - Techniques</h3>
             <h2>Retrouvez nos techniques professionnelles</h2>
             <div className='flex flex-col items-center justify-center md:flex-row'>
@@ -46,7 +55,7 @@ function Corpus({ setPayClicked }) {
             </div>
         </div>
 
-        <div className='bloc3 p-6'>
+        <div data-aos="zoom-out" className='bloc3 p-6'>
             <div className='bg-gray-50 p-6 flex flex-col items-center justify-center gap-4 lg:flex-row'>
                 <Image className='m-auto md:max-w-[400px]' src='/images/vignettes/vignette5.jpg' width={683} height={932} alt="finest-salon" />
                 <div className='sm:px-4 md:px-10'>
@@ -63,7 +72,7 @@ function Corpus({ setPayClicked }) {
             </div>
         </div>
 
-        <div className='bloc4 flex flex-col gap-8 my-6 mx-10 text-sm md:flex-row'>
+        <div data-aos="zoom-in" className='bloc4 flex flex-col gap-8 my-6 mx-10 text-sm md:flex-row'>
             <div className='flex items-center'>
                 <Image src='/images/trust/icon1.png' width={91} height={91} alt="finest-salon" />
                 <div className='m-2'>
@@ -89,7 +98,7 @@ function Corpus({ setPayClicked }) {
             </div>
         </div>
 
-        <div className='bloc5'>
+        <div data-aos="zoom-out" className='bloc5'>
             <div className='p-6'>
                 <div className='bg-gray-50 gap-4 py-2 flex flex-col justify-center items-center lg:flex-row'>
                     <Image className='max-w-[800px]' src='/images/finest-salon.png' width={3674} height={2758} alt="finest-salon" />

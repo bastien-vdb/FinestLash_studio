@@ -1,6 +1,8 @@
-import React from 'react';
+import {useEffect} from 'react';
 import Techniques from '../components/Techniques';
-import Image from 'next/image';
+import { aosAnimationConfig } from '@/components/utils/AosAnimationConfig';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const techniques = [
     {
@@ -33,6 +35,10 @@ const techniques = [
 
 function PrestationsPage({ setPayClicked }) {
 
+    useEffect(() => {
+        AOS.init(aosAnimationConfig);
+    }, []);
+
     return (
         <>
             <div className="cursor-pointer rounded-xl relative group shadow-xl">
@@ -45,7 +51,7 @@ function PrestationsPage({ setPayClicked }) {
                     </p>
                 </div >
 
-                <div className="w-full 2xl:w-3/4 flex items-center justify-center px-8 md:px-32 lg:px-16 2xl:px-0 mx-auto -mt-8">
+                <div data-aos="zoom-in" className="w-full 2xl:w-3/4 flex items-center justify-center px-8 md:px-32 lg:px-16 2xl:px-0 mx-auto -mt-8">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {techniques.map((e, key) => { return <Techniques setPayClicked={setPayClicked} {...e} key={key} /> })}
                     </div>

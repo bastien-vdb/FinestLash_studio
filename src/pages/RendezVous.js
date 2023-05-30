@@ -33,7 +33,7 @@ function RendezVous(props) {
                 frameBorder="0"
                 onLoad={() => setLoading(false)}
                 style={{ display: loading ? 'none' : 'block' }}
-                sandbox='allow-same-origin allow-scripts'
+                sandbox='allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox'
                 allowSameOrigin 
             >
             </iframe>
