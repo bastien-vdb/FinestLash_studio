@@ -10,7 +10,7 @@ function RendezVous(props) {
 
   return (
     <div>
-      <div className="mt-32 flex justify-center items-center bg-red-50">
+      <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
         <ModalAlert />
       </div>
       <iframe
