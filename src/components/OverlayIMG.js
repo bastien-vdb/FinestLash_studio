@@ -70,7 +70,7 @@ export const OverlayDesktop = ({ setPayClicked }) => {
 
                 <div className='imgOverlay relative cursor-pointer'>
                     <Link href="/Formations">
-                        <Image className='w-full' src='/images/manns/tarasbody.jpeg' width={536} height={819} alt="mann1" />
+                        <Image className='w-full' src='/images/manns/image00001.jpeg' width={536} height={819} alt="mann1" />
                         <div className="image-overlay">
                             <div className="overlay-text flex flex-col items-center justify-center gap-6">
                                 <h2 className='text-white' >Formations</h2>
