@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import HyperUIButton from "@/components/reusable/HyperUIButton";
-import RuleModal from "@/components/reusable/RuleModal";
+import React, { useState, useRef } from "react";
+// import RuleModal from "@/components/reusable/RuleModal";
+import ModalAlert from "@/components/reusable/ModalAlert";
+import Loader from "@/components/reusable/Loader";
 
 function RendezVous(props) {
   const [loading, setLoading] = useState(true);
@@ -9,23 +10,9 @@ function RendezVous(props) {
 
   return (
     <div>
-      {loading && <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center h-screen">Veuillez patienter quelques secondes...</div>}
-      <div className="mt-32">
-        <HyperUIButton />
-        <RuleModal />
+      <div className="mt-32 flex justify-center items-center bg-red-50">
+        <ModalAlert />
       </div>
-      {/* <iframe id="Reservations"
-                preload="true"
-                title="Réservations Rendez-vous"
-                width="100%"
-                height="100%"
-                className='h-screen'
-                src="https://finestlashstudio.fr/reservations/"
-                frameBorder="0"
-                onLoad={() => setLoading(false)}
-                style={{ display: loading ? 'none' : 'block' }}
-            >
-            </iframe> */}
       <iframe
         id="Reservations"
         ref={ifram}
@@ -39,8 +26,13 @@ function RendezVous(props) {
         onLoad={() => setLoading(false)}
         style={{ display: loading ? "none" : "block" }}
         sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
-        allowSameOrigin
+        allowsameorigin="true"
       ></iframe>
+      {loading && <div>
+        <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">Veuillez patienter quelques secondes...</div>
+        <Loader/>
+        </div>
+        }
     </div>
   );
 }
