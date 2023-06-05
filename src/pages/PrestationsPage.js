@@ -33,10 +33,25 @@ const techniques = [
     }
 ]
 
-function PrestationsPage({ setPayClicked }) {
+export const getServerSideProps = async () => {
+  const res = await fetch(`https://dzt.pgb.mybluehost.me/wp-json/wp/v2/pages/66`);
+  const repo = await res.json();
+  return { props: { repo } };
+};
+
+function PrestationsPage({ setPayClicked, repo }) { 
 
     useEffect(() => {
         AOS.init(aosAnimationConfig);
+        console.log('repo', repo);
+        // const getPageData = async (id) => {
+        //     await fetch(`https://dzt.pgb.mybluehost.me/wp-json/wp/v2/pages/66`)
+        //         .then((response) => response.json())
+        //         .then((data) => {
+        //             console.log(data);
+        //         })
+        // }
+        // getPageData(66);
     }, []);
 
     return (
