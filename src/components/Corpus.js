@@ -39,7 +39,7 @@ function Corpus({ setPayClicked }) {
                     </div>
                     <Button setPayClicked={setPayClicked} text='Prendre rendez-vous' />
                 </div>
-                <Image className='m-auto md:max-w-[600px]' src='/images/blueeyes2.png' width={1024} height={1024} alt="palette" />
+                {/* <Image className='m-auto md:max-w-[600px]' src='/images/blueeyes2.png' width={1024} height={1024} alt="palette" /> */}
             </div>
         </div>
 
@@ -63,9 +63,8 @@ function Corpus({ setPayClicked }) {
                     <h2>Bienvenue</h2>
                     <p>Nous vous accueillons sur rendez-vous de 9h à 21h du lundi au samedi dans notre studio beauté pour toute prestation.</p>
                     <ul className='flex flex-col gap-4'>
-                        <li className='flex gap-6 items-center'>{heroIconMap} 36 chemin des huats 93000 Bobigny</li>
-                        <li className='flex gap-6 items-center'>{heroIconArrow} Horaires d'ouvertures : <b>de 9h à 21h</b></li>
-                        <li className='flex gap-6 items-center'>{heroIconPhone} 𝟢6.78.1𝟦.𝟤5.11</li>
+                        <li className='flex gap-6 items-center'>{heroIconArrow} Horaires d'ouverture : <b>de 9h à 21h</b></li>
+                        <li className='flex gap-6 items-center'>{heroIconPhone} 𝟢7.83.63.97.38</li>
                         <li className='flex gap-6 items-center'>{heroIconEmail} contact@finestlashstudio.fr</li>
                     </ul>
                 </div>
@@ -81,13 +80,13 @@ function Corpus({ setPayClicked }) {
                 </div>
             </div>
 
-            <div className='flex items-center'>
+            {/* <div className='flex items-center'>
                 <Image src='/images/trust/icon2.png' width={91} height={91} alt="finest-salon" />
                 <div className='m-2'>
                     <h6 className='m-0'>Certifiée à l'international</h6>
                     <p>Au delà du diplôme, bénéficiez d'une expérience et d'une connaissance pointue</p>
                 </div>
-            </div>
+            </div> */}
 
             <div className='flex items-center'>
                 <Image src='/images/trust/icon3.png' width={91} height={91} alt="finest-salon" />
@@ -98,7 +97,7 @@ function Corpus({ setPayClicked }) {
             </div>
         </div>
 
-        <div data-aos="zoom-out" className='bloc5'>
+        {/* <div data-aos="zoom-out" className='bloc5'>
             <div className='p-6'>
                 <div className='bg-gray-50 gap-4 py-2 flex flex-col justify-center items-center lg:flex-row'>
                     <Image className='max-w-[800px]' src='/images/finest-salon.png' width={3674} height={2758} alt="finest-salon" />
@@ -113,7 +112,7 @@ function Corpus({ setPayClicked }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </>
 }
 

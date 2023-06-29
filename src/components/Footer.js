@@ -15,7 +15,7 @@ function Footer(props) {
                     </ul>
                 </div> */}
                 <div>
-                    <h2 className='text-2xl text-left'>VOUS & FINEST LASH STUDIO</h2>
+                    {/* <h2 className='text-2xl text-left'>VOUS & FINEST LASH STUDIO</h2> */}
                     <ul>
                         <li><Link href='/'>ACCUEIL</Link></li>
                         <li><Link href="/Legal">MENTIONS LÉGALES</Link></li>
