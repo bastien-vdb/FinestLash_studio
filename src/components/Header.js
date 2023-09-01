@@ -9,7 +9,7 @@ function Header({ setPayClicked }) {
     const menu = [
         { title: "Accueil", link: "/" },
         { title: "Prestations", link: "/PrestationsPage" },
-        // { title: "Formations", link: "/Formations" },   //Caché pour le moment - mais à reactivé quand on aura les formations
+        // { title: "Formations", link: "/Formations" },   //A activer ou désactiver si pas de campagne de formation
         { title: "Rendez-vous", link: "/RendezVous" },
         { title: "Contact", link: "/Contact" },
     ]
