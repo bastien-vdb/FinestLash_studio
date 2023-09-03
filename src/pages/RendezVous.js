@@ -31,7 +31,7 @@ function RendezVous(props) {
           <Loader />
         </div>
       )} */}
-      <a class="group flex items-center justify-between w-80 gap-4 rounded-lg border border-[#CCB3AE] bg-pink-600 px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring" href="http://wp.finestlash.studio/">
+      <a class="group flex items-center justify-between w-80 gap-4 rounded-lg border border-[#CCB3AE] bg-pink-600 px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring" href="https://dzt.pgb.mybluehost.me/">
         <span class="font-medium text-white transition-colors group-hover:text-[#CCB3AE] group-active:text-[#CDB4AE]">Prendre un rendez-vous</span>
 
         <span class="shrink-0 rounded-full border border-current bg-white p-2 text-[#CCB3AE] group-active:text-[#CCB3AE]">
