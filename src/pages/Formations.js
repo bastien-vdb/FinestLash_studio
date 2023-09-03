@@ -40,7 +40,7 @@ function Formations(props) {
         width="100%"
         height="100%"
         className="h-screen"
-        src="https://dzt.pgb.mybluehost.me/produit/formation-cil-a-cil-1500euros/"
+        src="http://wp.finestlash.studio/produit/formation-cil-a-cil-1500euros/"
         frameBorder="0"
         sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
         allowsameorigin="true"
