@@ -7,7 +7,7 @@ function RendezVous(props) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="flex flex-col justify-center items-center my-40">
+    <div>
       <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
         <ModalAlert />
       </div>
