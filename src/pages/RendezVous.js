@@ -11,27 +11,27 @@ function RendezVous(props) {
       <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
         <ModalAlert />
       </div>
-      {/* <iframe
+      <iframe
         id="Reservations"
         preload="true"
         title="Réservations Rendez-vous"
         width="100%"
         height="100%"
         className="h-screen"
-        src="http://wp.finestlash.studio/"
+        src="https://dzt.pgb.mybluehost.me/"
         frameBorder="0"
         onLoad={() => setLoading(false)}
         style={{ display: loading ? "none" : "block" }}
         sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
-        allowsameorigin="fals"
+        allowsameorigin="true"
       ></iframe>
       {loading && (
         <div>
           <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">Veuillez patienter quelques secondes...</div>
           <Loader />
         </div>
-      )} */}
-      <a class="group flex items-center justify-between w-80 gap-4 rounded-lg border border-[#CCB3AE] bg-pink-600 px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring" href="https://dzt.pgb.mybluehost.me/">
+      )}
+      {/* <a class="group flex items-center justify-between w-80 gap-4 rounded-lg border border-[#CCB3AE] bg-pink-600 px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring" href="https://dzt.pgb.mybluehost.me/">
         <span class="font-medium text-white transition-colors group-hover:text-[#CCB3AE] group-active:text-[#CDB4AE]">Prendre un rendez-vous</span>
 
         <span class="shrink-0 rounded-full border border-current bg-white p-2 text-[#CCB3AE] group-active:text-[#CCB3AE]">
@@ -39,7 +39,7 @@ function RendezVous(props) {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </span>
-      </a>
+      </a> */}
     </div>
   );
 }
