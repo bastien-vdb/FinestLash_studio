@@ -34,7 +34,7 @@ function Corpus({ setPayClicked }: propsWithPayClicked<{}>) {
 
             <div className="mosaic hidden sm:grid">
                 {imageOverlay.map((image) => {
-                    return image.main ?? <ImageOverlay src={image.src} title={image.title} link={image.link} main={image.main} />;
+                    return image.main ?? <ImageOverlay key={image.src} src={image.src} title={image.title} link={image.link} main={image.main} />;
                 })}
             </div>
         </div>

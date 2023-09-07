@@ -1,7 +1,6 @@
 import Corpus from '@/components/pages/index/Corpus';
 import Meta from "@/components/metas/Meta";
 import { propsWithPayClicked } from "@/types/propsWithPayClicked";
-import ImagePresentation from '@/components/reusable/ImagePresentation';
 
 export default function Home({ setPayClicked }: propsWithPayClicked<{}>) {
 
