@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from '../utils/icons';
+import { heroIconArrow, heroIconEmail, heroIconPhone } from '@/utils/icons';
 import ContactForm from '@/components/pages/contact/ContactForm';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
