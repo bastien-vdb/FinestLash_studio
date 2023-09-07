@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import { toggleClosed, toggleOpened } from "@/components/utils/staticsdata";
+import { toggleClosed, toggleOpened } from "@/utils/icons";
 import { menuType } from "@/types/menu";
 import { propsWithPayClicked } from "@/types/propsWithPayClicked";
 
