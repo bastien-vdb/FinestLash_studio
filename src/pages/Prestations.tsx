@@ -1,7 +1,7 @@
 import Techniques from "@/components/pages/prestations/Techniques";
 import "aos/dist/aos.css";
 import Meta from "@/components/metas/Meta";
-import { techniques } from "@/data/techniques";
+import { techniques } from "@/data/prestations/techniques";
 import { propsWithPayClicked } from "@/types/propsWithPayClicked";
 
 // export const getServerSideProps = async () => {

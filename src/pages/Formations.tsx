@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Programs } from "@/components/pages/formations/Programs";
-import { programs } from "@/data/programs";
+import { programs } from "@/data/formations/programs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

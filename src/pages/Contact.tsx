@@ -5,7 +5,7 @@ import ContactForm from '@/components/pages/contact/ContactForm';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { aosAnimationConfig } from '../utils/AosAnimationConfig';
+import { aosAnimationConfig } from '@/utils/AosAnimationConfig';
 import Meta from '@/components/metas/Meta';
 
 function Contact() {

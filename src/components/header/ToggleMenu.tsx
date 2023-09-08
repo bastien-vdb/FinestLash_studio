@@ -11,24 +11,6 @@ type ToggleMenuProps = {
 function ToggleMenu({ menu, setPayClicked }: propsWithPayClicked<ToggleMenuProps>) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuOpened = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if ((e.target as HTMLElement)?.id === "openOrClose") {
-        setIsOpen(() => false);
-      } else if (menuOpened.current && !menuOpened.current.contains(e.target as HTMLElement)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   return (
     <div className="z-40 lg:hidden">
       {!isOpen && (
@@ -37,7 +19,7 @@ function ToggleMenu({ menu, setPayClicked }: propsWithPayClicked<ToggleMenuProps
         </button>
       )}
 
-      <div ref={menuOpened} className="absolute top-28 left-0 bg-white shadow-sm shadow-black w-full translate-x-[-100%]" style={{ transition: "all 0.3s ease-in-out", transform: isOpen ? "translateX(0%)" : "translateX(-100%)" }}>
+      <div className="absolute top-28 left-0 bg-white shadow-sm shadow-black w-full translate-x-[-100%]" style={{ transition: "all 0.3s ease-in-out", transform: isOpen ? "translateX(0%)" : "translateX(-100%)" }}>
         <button className="absolute right-4 top-2" onClick={() => setIsOpen(false)}>
           {toggleOpened}
         </button>
@@ -49,7 +31,7 @@ function ToggleMenu({ menu, setPayClicked }: propsWithPayClicked<ToggleMenuProps
                   onClick={
                     e.link === '/RendezVous'
                       ? () => {
-                        setPayClicked(false);
+                        setPayClicked(true);
                         setIsOpen(false);
                       }
                       : () => {

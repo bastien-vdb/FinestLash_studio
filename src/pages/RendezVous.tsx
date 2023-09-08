@@ -6,7 +6,6 @@ import Meta from "@/components/metas/Meta";
 
 function RendezVous() {
   const [loading, setLoading] = useState(true);
-
   return (
     <div>
       <Meta />
