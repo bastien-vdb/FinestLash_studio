@@ -18,7 +18,7 @@ function RendezVous(props) {
         width="100%"
         // height="100%"
         className="h-screen"
-        src="http://localhost:3000/integrate/65eb8cc33db57d21b3e9c4f7"
+        src="https://quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7"
         frameBorder="0"
         onLoad={() => setLoading(false)}
         style={{ display: loading ? "none" : "block" }}
