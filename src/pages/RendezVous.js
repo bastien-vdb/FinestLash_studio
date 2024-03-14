@@ -8,17 +8,17 @@ function RendezVous(props) {
 
   return (
     <div>
-      <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
+      {/* <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
         <ModalAlert />
-      </div>
+      </div> */}
       <iframe
         id="Reservations"
         preload="true"
         title="Réservations Rendez-vous"
         width="100%"
-        height="100%"
+        // height="100%"
         className="h-screen"
-        src="https://dzt.pgb.mybluehost.me/"
+        src="http://localhost:3000/integrate/65eb8cc33db57d21b3e9c4f7"
         frameBorder="0"
         onLoad={() => setLoading(false)}
         style={{ display: loading ? "none" : "block" }}
