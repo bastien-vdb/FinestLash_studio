@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Corpus from "@/components/Corpus";
 import Meta from "@/components/metas/Meta";

@@ -25,14 +25,14 @@ function Formations() {
             </div>
           </div>
         </div>
-        <div data-aos="zoom-out" className="my-28 mx-60 text-xs text-center flex flex-col gap-4">
+        <div data-aos="zoom-out" className="flex flex-col gap-4 text-xs m-4 sm:m-20 sm:mx-20 md:mx-28 lg:mx-60">
           <h2 className="mt-4 text-center m-2">Organisme de formation visant l’excellence, le Finest Lash Studio vous propose différentes formations en fonction de votre niveau et de vos projets. </h2>
           <h2 className="mt-4 text-center m-2">Il est impératif pour nous de proposer des formations dans lesquelles l’enseignement d’une technique irréprochable est priorisée. </h2>
           <h2 className="mt-4 text-center m-2">
             Dispensées dans une ambiance intimiste, elles vous permettront d’être performant(e) et confiant(e) dans votre travail, et ainsi, de proposer un service de qualité, tout en vous démarquant sur ce marché de plus en plus compétitif : l’objectif n’étant pas de seulement former des (futur.e.s.) technicien(ne)s,
             mais de réels artistes.{" "}
           </h2>
-          <h2 className="mt-4 text-center m-2">Les formations proposées:</h2>
+          <h2 className="mt-4 text-center m-2 font-bold">Les formations proposées:</h2>
         </div>
       </div>
 
