@@ -90,7 +90,7 @@ export function Programs5(props) {
       <div className="flex flex-col items-center justify-center lg:flex-row">
         <div className="m-6 md:mx-10 xl:mx-20">
           <h3>En fonction de la demande, en général sur une journée entière.</h3>
-          <h2>FORMATION PERFECTIONNEMENT:</h2>
+          <h2 className="text-[1.5em] sm:text-4xl">FORMATION PERFECTIONNEMENT:</h2>
 
           <div className="text-justify">
             <p className="mt-10">La formation de perfectionnement est une formation faite sur mesure, afin qu’elle soit bénéfique à chaque apprenant. </p>
