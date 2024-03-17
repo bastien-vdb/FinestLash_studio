@@ -1,24 +1,18 @@
 import Image from "next/image";
-import { Programs1, Programs2 } from "../components/Programs";
+import { Programs1, Programs2, Programs3, Programs4, Programs5 } from "../components/Programs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { aosAnimationConfig } from "../components/utils/AosAnimationConfig";
-import Iframe from "@/components/reusable/Iframe";
-import { useState } from "react";
 
-function Formations(props) {
+function Formations() {
   useEffect(() => {
     AOS.init(aosAnimationConfig);
   }, []);
 
-  const [loading, setLoading] = useState(true);
-
-  //https://dzt.pgb.mybluehost.me/24-2/
-
   return (
     <>
-      <div className="bg-red-50 pb-10">
+      <div data-aos="zoom-in" className="bg-red-50 pb-10">
         <div className="formations mobileBaniere w-full h-screen shadow-2xl md:hidden"></div>
         <div className="container relative grid grid-cols-2 lg:w-[1000px] m-auto rounded shadow-lg">
           <Image data-aos="zoom-in" className="opacity-90 sm:h-[300px] shadow-sm object-cover border-2" src="/images/vignettes/vignette1.jpeg" width={1366} height={1366} alt="Formation finest Studio" />
@@ -31,23 +25,32 @@ function Formations(props) {
             </div>
           </div>
         </div>
+        <div data-aos="zoom-out" className="my-28 mx-60 text-xs text-center flex flex-col gap-4">
+          <h2 className="mt-4 text-center m-2">Organisme de formation visant l’excellence, le Finest Lash Studio vous propose différentes formations en fonction de votre niveau et de vos projets. </h2>
+          <h2 className="mt-4 text-center m-2">Il est impératif pour nous de proposer des formations dans lesquelles l’enseignement d’une technique irréprochable est priorisée. </h2>
+          <h2 className="mt-4 text-center m-2">
+            Dispensées dans une ambiance intimiste, elles vous permettront d’être performant(e) et confiant(e) dans votre travail, et ainsi, de proposer un service de qualité, tout en vous démarquant sur ce marché de plus en plus compétitif : l’objectif n’étant pas de seulement former des (futur.e.s.) technicien(ne)s,
+            mais de réels artistes.{" "}
+          </h2>
+          <h2 className="mt-4 text-center m-2">Les formations proposées:</h2>
+        </div>
       </div>
 
-      <Iframe
-        id="Reservations"
-        preload="true"
-        title="Réservations Rendez-vous"
-        width="100%"
-        height="100%"
-        className="h-screen"
-        src="http://wp.finestlash.studio/produit/formation-cil-a-cil-1500euros/"
-        frameBorder="0"
-        sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
-        allowsameorigin="true"
-      />
-
-      <Programs1 />
-      <Programs2 />
+      <div data-aos="zoom-in">
+        <Programs1 />
+      </div>
+      <div data-aos="zoom-out">
+        <Programs2 />
+      </div>
+      <div>
+        <Programs3 data-aos="zoom-in" />
+      </div>
+      <div data-aos="zoom-out">
+        <Programs4 />
+      </div>
+      <div>
+        <Programs5 data-aos="zoom-in" />
+      </div>
     </>
   );
 }

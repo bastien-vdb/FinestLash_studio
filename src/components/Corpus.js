@@ -97,7 +97,7 @@ function Corpus({ setPayClicked }) {
             </div>
         </div>
 
-        {/* <div data-aos="zoom-out" className='bloc5'>
+        <div data-aos="zoom-out" className='bloc5'>
             <div className='p-6'>
                 <div className='bg-gray-50 gap-4 py-2 flex flex-col justify-center items-center lg:flex-row'>
                     <Image className='max-w-[800px]' src='/images/finest-salon.png' width={3674} height={2758} alt="finest-salon" />
@@ -105,14 +105,13 @@ function Corpus({ setPayClicked }) {
                         <h3>FINEST LASH STUDIO - DEVENIR UN/UNE VERITABLE professionnel</h3>
                         <h2>La formation</h2>
                         <p className='text-center lg:w-72'>
-                            La formation Cil à cil, sur 2 jours, est faite pour les lash students débutantes sans expérience, souhaitant démarrer une activité en qualité de technicienne en extension de cils. Le programme de formation, traite...
+                        Organisme de formation visant l’excellence, le Finest Lash Studio vous propose différentes formations en fonction de votre niveau et de vos projets...
                         </p>
-                        <ButtonBlack text='Voir notre programme' link='/Formations' />
-                        <Button text='pré-inscription' link='/Formations' />
+                        <ButtonBlack text='Voir les formations' link='/Formations' />
                     </div>
                 </div>
             </div>
-        </div> */}
+        </div>
     </>
 }
 
