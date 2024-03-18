@@ -24,6 +24,7 @@ export function Programs2(props) {
   return (
     <div className="shadow-2xl p-2 bg-red-50">
       <div className="flex flex-col items-center justify-center lg:flex-row">
+        <Image className="shadow-xl m-auto w-[600px]" src="/images/Formations/volumeartistry.png" width={1366} height={1366} alt="Formation finest Studio" />
         <div className="m-6 md:mx-10 xl:mx-20">
           <h3>L’art du volume fait main, sur 1 jour</h3>
           <h2>VOLUME ARTISTRY:</h2>
@@ -37,7 +38,6 @@ export function Programs2(props) {
             <p className="mt-10">Natacha fera des rappels techniques afin de faire un volume digne de ce nom, et vous apprendra à créer vos bouquets vous-même et à faire différents effets en fonction du rendu souhaité.</p>
           </div>
         </div>
-        <Image className="shadow-xl m-auto w-[600px]" src="/images/Formations/volumeartistry.png" width={1366} height={1366} alt="Formation finest Studio" />
       </div>
     </div>
   );
@@ -74,7 +74,7 @@ export function Programs4(props) {
             <p className="mt-10">À l’issue de cette formation, vous serez en mesure de créer des effets fox eyes et liner qui auront le mérite d’être appelés ainsi.</p>
           </div>
         </div>
-        <Image className="shadow-xl m-auto w-[600px]" src="/images/Formations/volumeartistry_prolevel.png" width={1366} height={1366} alt="Formation finest Studio" />
+        <Image className="shadow-xl m-auto w-[600px]" src="/images/Formations/volumeartistry_prolevel.png" width={1080} height={1366} alt="Formation finest Studio" />
       </div>
 
       <div className="my-10">
@@ -88,6 +88,7 @@ export function Programs5(props) {
   return (
     <div className="shadow-2xl p-2">
       <div className="flex flex-col items-center justify-center lg:flex-row">
+        <Image className="shadow-xl m-auto w-[800px]" src="/images/Formations/perfectionnement.png" width={1080} height={1350} alt="Formation finest Studio" />
         <div className="m-6 md:mx-10 xl:mx-20">
           <h3>En fonction de la demande, en général sur une journée entière.</h3>
           <h2 className="text-[1.5em] sm:text-4xl">FORMATION PERFECTIONNEMENT:</h2>
@@ -98,7 +99,6 @@ export function Programs5(props) {
             <p className="mt-10">Les points évoqués peuvent être purement techniques aussi bien que relatifs au business. L’expérience de Natacha vous sera plus que bénéfique. </p>
           </div>
         </div>
-        <Image className="shadow-xl m-auto w-[800px]" src="/images/Formations/perfectionnement2.png" width={1080} height={1350} alt="Formation finest Studio" />
       </div>
 
       <ul className="mt-20 italic text-center text-red-600">
