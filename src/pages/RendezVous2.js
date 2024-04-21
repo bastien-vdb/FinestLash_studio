@@ -1,9 +1,16 @@
-import React, { useState, useRef } from "react";
-// import RuleModal from "@/components/reusable/RuleModal";
+import React from "react";
+import Image from "next/image";
+import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from "../components/utils/staticsdata";
+import ContactForm from "@/components/ContactForm";
+import ContactForm2 from "@/components/ContactForm";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useState } from "react";
+import { aosAnimationConfig } from "../components/utils/AosAnimationConfig";
 import ModalAlert from "@/components/reusable/ModalAlert";
 import Loader from "@/components/reusable/Loader";
 
-function RendezVous(props) {
+function RendezVous2(props) {
   const [loading, setLoading] = useState(true);
 
   return (
@@ -13,6 +20,7 @@ function RendezVous(props) {
       </div> */}
       {/* src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7" */}
       {/* src="http://localhost:3000/integrate/65eb8cc33db57d21b3e9c4f7" */}
+
       <iframe
         id="Reservations"
         preload="true"
@@ -20,9 +28,9 @@ function RendezVous(props) {
         width="100%"
         className="h-screen"
         src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7"
-        frameBorder="0"
         onLoad={() => setLoading(false)}
-        style={{ display: loading ? "none" : "block", height: "130vh" }}
+        frameBorder="0"
+        style={{ display: loading ? "none" : "block" }}
         sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
         allowsameorigin="true"
       ></iframe>
@@ -36,4 +44,4 @@ function RendezVous(props) {
   );
 }
 
-export default RendezVous;
+export default RendezVous2;
