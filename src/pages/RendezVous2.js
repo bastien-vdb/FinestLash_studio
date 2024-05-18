@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { heroIconArrow, heroIconMap, heroIconEmail, heroIconPhone } from "../components/utils/staticsdata";
+import {
+  heroIconArrow,
+  heroIconMap,
+  heroIconEmail,
+  heroIconPhone,
+} from "../components/utils/staticsdata";
 import ContactForm from "@/components/ContactForm";
 import ContactForm2 from "@/components/ContactForm";
 import AOS from "aos";
@@ -27,7 +32,7 @@ function RendezVous2(props) {
         title="Réservations Rendez-vous"
         width="100%"
         className="h-screen"
-        src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7"
+        src="https://www.quickreserve.app/integrate/663544990f39f4a3f543b11a"
         onLoad={() => setLoading(false)}
         frameBorder="0"
         style={{ display: loading ? "none" : "block" }}
@@ -36,7 +41,9 @@ function RendezVous2(props) {
       ></iframe>
       {loading && (
         <div>
-          <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">Veuillez patienter quelques secondes...</div>
+          <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">
+            Veuillez patienter quelques secondes...
+          </div>
           <Loader />
         </div>
       )}

@@ -19,7 +19,7 @@ function RendezVous(props) {
         title="Réservations Rendez-vous"
         width="100%"
         className="h-screen"
-        src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7"
+        src="https://www.quickreserve.app/integrate/663544990f39f4a3f543b11a"
         frameBorder="0"
         onLoad={() => setLoading(false)}
         style={{ display: loading ? "none" : "block", height: "130vh" }}
@@ -28,7 +28,9 @@ function RendezVous(props) {
       ></iframe>
       {loading && (
         <div>
-          <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">Veuillez patienter quelques secondes...</div>
+          <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">
+            Veuillez patienter quelques secondes...
+          </div>
           <Loader />
         </div>
       )}
