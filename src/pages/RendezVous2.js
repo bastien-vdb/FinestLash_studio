@@ -26,27 +26,29 @@ function RendezVous2(props) {
       {/* src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7" */}
       {/* src="http://localhost:3000/integrate/65eb8cc33db57d21b3e9c4f7" */}
 
-      <iframe
-        id="Reservations"
-        preload="true"
-        title="Réservations Rendez-vous"
-        width="100%"
-        className="h-screen"
-        src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
-        onLoad={() => setLoading(false)}
-        frameBorder="0"
-        style={{ display: loading ? "none" : "block" }}
-        sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
-        allowsameorigin="true"
-      ></iframe>
-      {loading && (
-        <div>
-          <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">
-            Veuillez patienter quelques secondes...
+      <div>
+        <iframe
+          id="Reservations"
+          preload="true"
+          title="Réservations Rendez-vous"
+          width="100%"
+          className="h-screen"
+          src="https://services-git-master-bastienvdbs-projects.vercel.app/integrate/66536d718a97b102c3f8159e"
+          onLoad={() => setLoading(false)}
+          frameBorder="0"
+          style={{ display: loading ? "none" : "block" }}
+          sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
+          allowsameorigin="true"
+        ></iframe>
+        {loading && (
+          <div>
+            <div className="loading flex text-4xl text-[#CCB3AE] text-center justify-center items-center mt-10">
+              Veuillez patienter quelques secondes...
+            </div>
+            <Loader />
           </div>
-          <Loader />
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
