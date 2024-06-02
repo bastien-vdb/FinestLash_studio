@@ -33,7 +33,7 @@ function RendezVous2(props) {
           title="Réservations Rendez-vous"
           width="100%"
           className="h-screen"
-          src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
+          src="http://localhost:3000/integrate/66536d718a97b102c3f8159e"
           onLoad={() => setLoading(false)}
           frameBorder="0"
           style={{ display: loading ? "none" : "block" }}
