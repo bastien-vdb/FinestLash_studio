@@ -31,11 +31,11 @@ function RendezVous2(props) {
           id="Reservations"
           preload="true"
           title="Réservations Rendez-vous"
-          width="100%"
-          className="h-screen"
-          src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
+          className="fixed"
+          width={"100%"}
+          height={"100%"}
+          src="http://localhost:3000/" //src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
           onLoad={() => setLoading(false)}
-          frameBorder="0"
           style={{ display: loading ? "none" : "block" }}
           sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
           allowsameorigin="true"
