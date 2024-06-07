@@ -19,22 +19,22 @@ function RendezVous2(props) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div>
+    <div style={{ height: "100vh", width: "100%" }}>
       {/* <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
         <ModalAlert />
       </div> */}
       {/* src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7" */}
       {/* src="http://localhost:3000/integrate/65eb8cc33db57d21b3e9c4f7" */}
 
-      <div>
+      <div style={{ height: "100vh", width: "100%" }}>
         <iframe
           id="Reservations"
           preload="true"
           title="Réservations Rendez-vous"
-          className="fixed"
+          className=""
           width={"100%"}
           height={"100%"}
-          src="http://localhost:3000/" //src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
+          src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
           onLoad={() => setLoading(false)}
           style={{ display: loading ? "none" : "block" }}
           sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
