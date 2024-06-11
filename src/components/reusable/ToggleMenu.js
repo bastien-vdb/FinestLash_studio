@@ -12,7 +12,6 @@ function ToggleMenu({ menu, setPayClicked }) {
       if (e.target.id === "openOrClose") {
         setIsOpen(() => false);
       } else if (menuOpened.current && !menuOpened.current.contains(e.target)) {
-        console.log(!menuOpened.current.contains(e.target));
         setIsOpen(false);
       }
     };
