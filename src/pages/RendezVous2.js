@@ -1,31 +1,31 @@
-import React from "react";
-import Image from "next/image";
-import {
-  heroIconArrow,
-  heroIconMap,
-  heroIconEmail,
-  heroIconPhone,
-} from "../components/utils/staticsdata";
-import ContactForm from "@/components/ContactForm";
-import ContactForm2 from "@/components/ContactForm";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useState } from "react";
-import { aosAnimationConfig } from "../components/utils/AosAnimationConfig";
+import React, { useState, useEffect } from "react";
 import ModalAlert from "@/components/reusable/ModalAlert";
 import Loader from "@/components/reusable/Loader";
 
 function RendezVous2(props) {
   const [loading, setLoading] = useState(true);
 
+  const adjustIframeHeight = () => {
+    const header = document.getElementById("header");
+    const footer = document.getElementById("footer");
+    const iframe = document.getElementById("Reservations");
+    if (header && footer && iframe) {
+      const headerHeight = header.clientHeight;
+      const footerHeight = footer.clientHeight;
+      iframe.style.height = `calc(100vh - ${headerHeight + footerHeight}px)`;
+    }
+  };
+
+  useEffect(() => {
+    adjustIframeHeight();
+    window.addEventListener("resize", adjustIframeHeight);
+    return () => {
+      window.removeEventListener("resize", adjustIframeHeight);
+    };
+  }, []);
+
   return (
     <div style={{ height: "100vh", width: "100%" }}>
-      {/* <div className="mt-32 flex justify-center items-center bg-[#ccb3aed9]">
-        <ModalAlert />
-      </div> */}
-      {/* src="https://www.quickreserve.app/integrate/65eb8cc33db57d21b3e9c4f7" */}
-      {/* src="http://localhost:3000/integrate/65eb8cc33db57d21b3e9c4f7" */}
-
       <div style={{ height: "100vh", width: "100%" }}>
         <iframe
           id="Reservations"

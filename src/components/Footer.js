@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Footer(props) {
   return (
-    <div>
+    <footer id="footer">
       <div className="footer m-4 flex-row flex flex-col gap-2 sm:flex-row sm:justify-around sm:items-center sm:px-20">
         <Image
           className="w-10 sm:w-32"
@@ -41,7 +41,7 @@ function Footer(props) {
       <div className="flex justify-center items-center h-8 bg-[#CCB3AE] text-white text-xs text-center">
         @ 2023 Finest Lash Studio, Réalisation: @Bastien VDB
       </div>
-    </div>
+    </footer>
   );
 }
 
