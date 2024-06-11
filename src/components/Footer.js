@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function Footer(props) {
+function Footer() {
   return (
     <div id="footer">
-      <div className="footer m-4 flex-row flex flex-col gap-2 sm:flex-row sm:justify-around sm:items-center sm:px-20">
+      <div className="footer sm:m-4 flex-row flex flex-col gap-2 sm:flex-row sm:justify-around sm:items-center sm:px-20">
         <Image
-          className="w-10 sm:w-28"
+          className="hidden sm:block w-10 sm:w-28"
           src="/images/logo.svg"
           width={185}
           height={185}
@@ -39,7 +39,7 @@ function Footer(props) {
         </div>
       </div>
       <div className="flex justify-center items-center h-8 bg-[#CCB3AE] text-white text-xs text-center">
-        @ 2023 Finest Lash Studio, Réalisation: @Bastien VDB
+        @ 2024 Finest Lash Studio, Réalisation: @Bastien VDB
       </div>
     </div>
   );

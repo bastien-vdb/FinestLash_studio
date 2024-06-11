@@ -14,26 +14,24 @@ function Header({ setPayClicked }) {
   ];
 
   return (
-    <>
-      <div className="relative">
-        <div className="flex justify-center items-center h-8 bg-[#CCB3AE] text-xs sm:text-sm md:text-base text-white text-center">
-          FinestLash Studio, salon d'extension de cils
-        </div>
-        <div className="flex justify-between items-center m-6 px-8">
-          <Link href="/">
-            <Image
-              className="w-10 md:w-14 lg:w-20"
-              src="/images/logo.svg"
-              width={351}
-              height={351}
-              alt="logo"
-            />
-          </Link>
-          <ToggleMenu menu={menu} setPayClicked={setPayClicked} />
-          <DesktopMenu menu={menu} setPayClicked={setPayClicked} />
-        </div>
+    <header id="header" className="relative">
+      <div className="flex justify-center items-center h-8 bg-[#CCB3AE] text-xs sm:text-sm md:text-base text-white text-center">
+        FinestLash Studio, salon d'extension de cils
       </div>
-    </>
+      <div className="flex justify-between items-center sm:m-6 px-8">
+        <Link href="/">
+          <Image
+            className="w-8 md:w-14 lg:w-20"
+            src="/images/logo.svg"
+            width={351}
+            height={351}
+            alt="logo"
+          />
+        </Link>
+        <ToggleMenu menu={menu} setPayClicked={setPayClicked} />
+        <DesktopMenu menu={menu} setPayClicked={setPayClicked} />
+      </div>
+    </header>
   );
 }
 
