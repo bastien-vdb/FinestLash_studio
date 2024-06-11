@@ -4,10 +4,10 @@ import Link from "next/link";
 
 function Footer(props) {
   return (
-    <div id="footer" className="bg-black">
+    <div id="footer">
       <div className="footer m-4 flex-row flex flex-col gap-2 sm:flex-row sm:justify-around sm:items-center sm:px-20">
         <Image
-          className="w-10 sm:w-32"
+          className="w-10 sm:w-28"
           src="/images/logo.svg"
           width={185}
           height={185}
