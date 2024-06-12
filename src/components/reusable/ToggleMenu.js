@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { toggleClosed, toggleOpened } from "../utils/staticsdata";
 import DropDownMainMenu from "@/components/DropDownMainMenu";
+import MenubarDemo from "../MenuBar";
 
 // function ToggleMenu({ menu, setPayClicked }) {
 //   const [isOpen, setIsOpen] = useState(false);
@@ -90,7 +91,8 @@ import DropDownMainMenu from "@/components/DropDownMainMenu";
 function ToggleMenu({ menu, setPayClicked }) {
   return (
     <div className="lg:hidden p-2">
-      <DropDownMainMenu />
+      {/* <DropDownMainMenu /> */}
+      <MenubarDemo />
     </div>
   );
 }
