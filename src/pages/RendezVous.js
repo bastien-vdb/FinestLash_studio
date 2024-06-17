@@ -35,7 +35,7 @@ function RendezVousCopy(props) {
           width={"100%"}
           height={"100%"}
           // src="http://localhost:3000/integrate/666019ccbdad1b184f160cb3"
-          src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
+          src="https://services-git-master-bastienvdbs-projects.vercel.app/integrate/666019ccbdad1b184f160cb3"
           onLoad={() => setLoading(false)}
           style={{ display: loading ? "none" : "block" }}
           sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
