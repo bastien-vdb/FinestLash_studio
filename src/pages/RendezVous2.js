@@ -43,7 +43,8 @@ function RendezVous2(props) {
           title="Réservations Rendez-vous"
           height={height}
           width={"100%"}
-          src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
+          // src="https://www.quickreserve.app/integrate/66536d718a97b102c3f8159e"
+          src="https://dzt.pgb.mybluehost.me/"
           onLoad={() => setLoading(false)}
           style={{ display: loading ? "none" : "block", border: "none" }}
           sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"
