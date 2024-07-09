@@ -9,7 +9,7 @@ function Header({ setPayClicked }) {
     { title: "Accueil", link: "/" },
     { title: "Prestations", link: "/PrestationsPage" },
     { title: "Formations", link: "/Formations" }, //A activer ou désactiver si pas de campagne de formation
-    { title: "Rendez-vous", link: "/RendezVous" },
+    { title: "Rendez-vous", link: "/RendezVous2" },
     { title: "Contact", link: "/Contact" },
   ];
 
