@@ -28,8 +28,8 @@ function Header({ setPayClicked }) {
             alt="logo"
           />
         </Link>
-        <ToggleMenu menu={menu} setPayClicked={setPayClicked} />
-        <DesktopMenu menu={menu} setPayClicked={setPayClicked} />
+        {/* <ToggleMenu menu={menu} setPayClicked={setPayClicked} />
+        <DesktopMenu menu={menu} setPayClicked={setPayClicked} /> */}
       </div>
     </header>
   );
