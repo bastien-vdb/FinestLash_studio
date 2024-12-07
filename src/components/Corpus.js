@@ -19,7 +19,6 @@ function Corpus({ setPayClicked }) {
   useEffect(() => {
     AOS.init(aosAnimationConfig);
     if (typeof window !== "undefined") {
-      window.location.href = "/RendezVous2";
     }
   }, []);
 
